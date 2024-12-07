@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .black_box{
+            width: 200px;
+            height: 200px;
+            background: blue;
+            margin: 10px;
+        }
+        .green_box{
+            width: 200px;
+            height: 200px;
+            background: green;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+         <div id="result"></div>
+    <script>
+         for(i=1; i<10; i++){
+            if (i<5){
+                let black_box="<div class='black_box'></div>";
+            document.getElementById("result").innerHTML += black_box;
+            }else{
+            let green_box="<div class='green_box'></div>";
+            document.getElementById("result").innerHTML += green_box;
+            }
+            
+           
+
+         }
+        
+    </script>
+</body>
+</html>
